@@ -13,6 +13,7 @@
 */
 
 // Partiu codar
+// Essa função recebe um array e verifica seu tamanho com o .length e retorna undefined caso ele esteja vazio, depois verfica se o tipo de cada posição do array é number e caso não seja retorna undefined. Por ultimo, caso o parâmetro seja um array de números a função incrementa em sum o valor contido em value divido pelo tamanho do array e retorna o valor inteiro mais próximo aproximado de sum utilizando math.round():
 
 const average = (array) => {
   let sum = 0;

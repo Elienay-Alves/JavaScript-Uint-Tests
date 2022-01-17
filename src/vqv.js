@@ -16,6 +16,13 @@
       #VQV!'
 */
 
-const vqv = () => {};
-
+// Criamos uma função que verifica se nome e idade são undefined e se não forem retorna a template literal. Resolvi não identar pois toda vez que identava adicionava espaço na minha template e não passava nos testes (sei que poderia usar o \n porém pra isso ia ter que usar concatenação né, ou não? Vou testar. Tentei aqui e o Lint saiu gritando kkk pelo visto o jeito é não identar).
+const vqv = (nome, idade) => {
+if (nome !== undefined && idade !== undefined) {
+return `Oi, meu nome é ${nome}!
+Tenho ${idade} anos,
+trabalho na Trybe e mando muito em programação!
+#VQV!`;
+}
+};
 module.exports = vqv;

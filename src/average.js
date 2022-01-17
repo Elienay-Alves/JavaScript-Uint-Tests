@@ -14,6 +14,19 @@
 
 // Partiu codar
 
-const average = () => {};
+const average = (array) => {
+  let sum = 0;
+
+  if (array.length === 0) {
+    return undefined;
+  }
+  for (let value of array) {
+    if (typeof value !== 'number') {
+      return undefined;
+    }
+    sum += value / array.length;
+  }
+  return Math.round(sum);
+};
 
 module.exports = average;

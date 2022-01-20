@@ -14,7 +14,7 @@
     estudante.name // Retorna: 'Leandrão, o Lobo Solitário'
     estudante.feedback() // Retorna: 'Eita pessoa boa!'
 */
-
+// Criamos uma função abaixo uma função que recebe o nome do estudante e retorana um objeto contendo na primeira chave o nome passado como parâmetro e na segunda o feedback que uma função que retorna a frase 'Eita pessoa boa!'
 const createStudent = (yourName) => ({
     name: yourName,
     feedback: () => 'Eita pessoa boa!',
